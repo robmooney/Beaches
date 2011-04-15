@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E252A6F913577964007B5B97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252A6F813577964007B5B97 /* UIKit.framework */; };
+		E252A6FB13577964007B5B97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252A6FA13577964007B5B97 /* Foundation.framework */; };
+		E252A6FD13577964007B5B97 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252A6FC13577964007B5B97 /* CoreGraphics.framework */; };
+		E252A70313577964007B5B97 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E252A70113577964007B5B97 /* InfoPlist.strings */; };
+		E252A70613577964007B5B97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E252A70513577964007B5B97 /* main.m */; };
+		E252A70913577964007B5B97 /* BeachesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E252A70813577964007B5B97 /* BeachesAppDelegate.m */; };
+		E252A70C13577965007B5B97 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E252A70A13577965007B5B97 /* MainWindow.xib */; };
+		E252A70F13577965007B5B97 /* BeachesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E252A70E13577965007B5B97 /* BeachesViewController.m */; };
+		E252A71213577965007B5B97 /* BeachesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E252A71013577965007B5B97 /* BeachesViewController.xib */; };
+		E252A719135779B2007B5B97 /* Beaches.kml in Resources */ = {isa = PBXBuildFile; fileRef = E252A718135779B2007B5B97 /* Beaches.kml */; };
+		E252A71B135779F4007B5B97 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252A71A135779F4007B5B97 /* MapKit.framework */; };
+		E252A71D13577A40007B5B97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252A71C13577A40007B5B97 /* CoreLocation.framework */; };
+		E252A72013577EE8007B5B97 /* Beach.m in Sources */ = {isa = PBXBuildFile; fileRef = E252A71F13577EE8007B5B97 /* Beach.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E252A6F413577964007B5B97 /* Beaches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beaches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E252A6F813577964007B5B97 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E252A6FA13577964007B5B97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E252A6FC13577964007B5B97 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E252A70013577964007B5B97 /* Beaches-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beaches-Info.plist"; sourceTree = "<group>"; };
+		E252A70213577964007B5B97 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E252A70413577964007B5B97 /* Beaches-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beaches-Prefix.pch"; sourceTree = "<group>"; };
+		E252A70513577964007B5B97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E252A70713577964007B5B97 /* BeachesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeachesAppDelegate.h; sourceTree = "<group>"; };
+		E252A70813577964007B5B97 /* BeachesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeachesAppDelegate.m; sourceTree = "<group>"; };
+		E252A70B13577965007B5B97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E252A70D13577965007B5B97 /* BeachesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeachesViewController.h; sourceTree = "<group>"; };
+		E252A70E13577965007B5B97 /* BeachesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeachesViewController.m; sourceTree = "<group>"; };
+		E252A71113577965007B5B97 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BeachesViewController.xib; sourceTree = "<group>"; };
+		E252A718135779B2007B5B97 /* Beaches.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Beaches.kml; path = ../../../Downloads/Beaches.kml; sourceTree = "<group>"; };
+		E252A71A135779F4007B5B97 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E252A71C13577A40007B5B97 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E252A71E13577EE8007B5B97 /* Beach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beach.h; sourceTree = "<group>"; };
+		E252A71F13577EE8007B5B97 /* Beach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beach.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E252A6F113577964007B5B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E252A71D13577A40007B5B97 /* CoreLocation.framework in Frameworks */,
+				E252A71B135779F4007B5B97 /* MapKit.framework in Frameworks */,
+				E252A6F913577964007B5B97 /* UIKit.framework in Frameworks */,
+				E252A6FB13577964007B5B97 /* Foundation.framework in Frameworks */,
+				E252A6FD13577964007B5B97 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E252A6E913577964007B5B97 = {
+			isa = PBXGroup;
+			children = (
+				E252A6FE13577964007B5B97 /* Beaches */,
+				E252A6F713577964007B5B97 /* Frameworks */,
+				E252A6F513577964007B5B97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E252A6F513577964007B5B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E252A6F413577964007B5B97 /* Beaches.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E252A6F713577964007B5B97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E252A71C13577A40007B5B97 /* CoreLocation.framework */,
+				E252A71A135779F4007B5B97 /* MapKit.framework */,
+				E252A6F813577964007B5B97 /* UIKit.framework */,
+				E252A6FA13577964007B5B97 /* Foundation.framework */,
+				E252A6FC13577964007B5B97 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E252A6FE13577964007B5B97 /* Beaches */ = {
+			isa = PBXGroup;
+			children = (
+				E252A70713577964007B5B97 /* BeachesAppDelegate.h */,
+				E252A70813577964007B5B97 /* BeachesAppDelegate.m */,
+				E252A70A13577965007B5B97 /* MainWindow.xib */,
+				E252A70D13577965007B5B97 /* BeachesViewController.h */,
+				E252A70E13577965007B5B97 /* BeachesViewController.m */,
+				E252A71013577965007B5B97 /* BeachesViewController.xib */,
+				E252A6FF13577964007B5B97 /* Supporting Files */,
+				E252A71E13577EE8007B5B97 /* Beach.h */,
+				E252A71F13577EE8007B5B97 /* Beach.m */,
+			);
+			path = Beaches;
+			sourceTree = "<group>";
+		};
+		E252A6FF13577964007B5B97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E252A718135779B2007B5B97 /* Beaches.kml */,
+				E252A70013577964007B5B97 /* Beaches-Info.plist */,
+				E252A70113577964007B5B97 /* InfoPlist.strings */,
+				E252A70413577964007B5B97 /* Beaches-Prefix.pch */,
+				E252A70513577964007B5B97 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E252A6F313577964007B5B97 /* Beaches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E252A71513577965007B5B97 /* Build configuration list for PBXNativeTarget "Beaches" */;
+			buildPhases = (
+				E252A6F013577964007B5B97 /* Sources */,
+				E252A6F113577964007B5B97 /* Frameworks */,
+				E252A6F213577964007B5B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beaches;
+			productName = Beaches;
+			productReference = E252A6F413577964007B5B97 /* Beaches.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E252A6EB13577964007B5B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Robert Mooney";
+			};
+			buildConfigurationList = E252A6EE13577964007B5B97 /* Build configuration list for PBXProject "Beaches" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E252A6E913577964007B5B97;
+			productRefGroup = E252A6F513577964007B5B97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E252A6F313577964007B5B97 /* Beaches */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E252A6F213577964007B5B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E252A70313577964007B5B97 /* InfoPlist.strings in Resources */,
+				E252A70C13577965007B5B97 /* MainWindow.xib in Resources */,
+				E252A71213577965007B5B97 /* BeachesViewController.xib in Resources */,
+				E252A719135779B2007B5B97 /* Beaches.kml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E252A6F013577964007B5B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E252A70613577964007B5B97 /* main.m in Sources */,
+				E252A70913577964007B5B97 /* BeachesAppDelegate.m in Sources */,
+				E252A70F13577965007B5B97 /* BeachesViewController.m in Sources */,
+				E252A72013577EE8007B5B97 /* Beach.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E252A70113577964007B5B97 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E252A70213577964007B5B97 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E252A70A13577965007B5B97 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E252A70B13577965007B5B97 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E252A71013577965007B5B97 /* BeachesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E252A71113577965007B5B97 /* en */,
+			);
+			name = BeachesViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E252A71313577965007B5B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E252A71413577965007B5B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		E252A71613577965007B5B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beaches/Beaches-Prefix.pch";
+				INFOPLIST_FILE = "Beaches/Beaches-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E252A71713577965007B5B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beaches/Beaches-Prefix.pch";
+				INFOPLIST_FILE = "Beaches/Beaches-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E252A6EE13577964007B5B97 /* Build configuration list for PBXProject "Beaches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E252A71313577965007B5B97 /* Debug */,
+				E252A71413577965007B5B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E252A71513577965007B5B97 /* Build configuration list for PBXNativeTarget "Beaches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E252A71613577965007B5B97 /* Debug */,
+				E252A71713577965007B5B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E252A6EB13577964007B5B97 /* Project object */;
+}
