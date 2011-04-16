@@ -172,19 +172,17 @@ didStartElement:(NSString *)elementName
     CLLocationDegrees maxLon = -180.0;
     
     for (id <MKAnnotation> annotation in annotations) {
-        if (annotation.coordinate.latitude != 0 && annotation.coordinate.longitude != 0) {
-            if (annotation.coordinate.latitude < minLat) {
-                minLat = annotation.coordinate.latitude;
-            }		
-            if (annotation.coordinate.longitude < minLon) {
-                minLon = annotation.coordinate.longitude;
-            }		
-            if (annotation.coordinate.latitude > maxLat) {
-                maxLat = annotation.coordinate.latitude;
-            }		
-            if (annotation.coordinate.longitude > maxLon) {
-                maxLon = annotation.coordinate.longitude;
-            }
+        if (annotation.coordinate.latitude < minLat) {
+            minLat = annotation.coordinate.latitude;
+        }		
+        if (annotation.coordinate.longitude < minLon) {
+            minLon = annotation.coordinate.longitude;
+        }		
+        if (annotation.coordinate.latitude > maxLat) {
+            maxLat = annotation.coordinate.latitude;
+        }		
+        if (annotation.coordinate.longitude > maxLon) {
+            maxLon = annotation.coordinate.longitude;
         }
     }
     
