@@ -149,21 +149,18 @@ didStartElement:(NSString *)elementName
 
 - (MKAnnotationView *)mapView:(MKMapView *)mv viewForAnnotation:(id <MKAnnotation>)annotation {
     
-    static NSString *identifier = @"Pin";
+    static NSString *Identifier = @"Pin";
     
-    MKPinAnnotationView *pin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    
+    MKPinAnnotationView *pin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:Identifier];
     
     if (pin == nil) {
-        pin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        pin = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:Identifier] autorelease];
         
         pin.canShowCallout = YES;
         pin.animatesDrop = YES;
-
     }
         
-    return pin;
-    
+    return pin;    
 }
 
 
